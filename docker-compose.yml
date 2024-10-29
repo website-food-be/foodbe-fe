@@ -1,13 +1,8 @@
-version: '3.8'
-
 services:
   frontend:
     container_name: foodbe-fe
     build:
       context: .
       dockerfile: Dockerfile
-    volumes:
-      - './:/app'
-      - '/app/node_modules'
     ports:
-      - 3000:3000
+      - "3000:80"
